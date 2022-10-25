@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import CHLogo from './components/CNLogo';
+import JokeProvider from './contexts/JokeProvider';
+import CategoryProvider from './contexts/CategoryProvider';
+import SelectOption from './components/SelectOption';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <CHLogo />
+        <h1>Chuck Norris Jokes</h1>
+        <CategoryProvider>
+          <SelectOption />
+        </CategoryProvider>
+        <JokeProvider>
+          <Main />
+        </JokeProvider>
+      </div>
+    </>
   );
 }
 
