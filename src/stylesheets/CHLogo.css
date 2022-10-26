@@ -3,7 +3,7 @@
     transform: translateZ(0);
     cursor: pointer;
   height: auto;
-  width: 360px;
+  width: 300px;
 }
 
 .cn-logo:hover {
@@ -15,4 +15,10 @@
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+@media(min-width: 1440px) { 
+  .cn-logo  {
+    width: 360px;
+  }
 }

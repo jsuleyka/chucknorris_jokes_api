@@ -1,3 +1,4 @@
+// Adaptador del endpoint url
 const fetchData = (url, method = 'GET', data) => 
  fetch(url, {
     method: method,

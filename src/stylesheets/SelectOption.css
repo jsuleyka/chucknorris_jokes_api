@@ -5,13 +5,12 @@
 }
 
 p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .dropbtn {
   background-color: transparent;
-  /* border: 0; */
   color: white;
   cursor: pointer;
   font-size: 16px;
@@ -34,4 +33,10 @@ option:hover {
 
 .dropbtnt:hover {
   background-color: #3e8e41;
+}
+
+@media(min-width:1440px) {
+  p {
+    font-size: 22px;
+  }
 }
